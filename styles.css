@@ -1,62 +1,75 @@
-body {
+body { /*mengatur warna dan jenis font*/
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #333;
+    color: #424242;
 }
-header {
+
+header { /*mengatur background pada logo*/
     background-color: #8BCBE6;
     padding: 20px;
     text-align: center;
 }
-header img {
-    max-width: 200px;
+
+header img { /*mengatur logo*/
+    max-width: 300px;
 }
-.hero {
-    background-color: #d4d4d4;
-    width: auto;
-    padding: 20px;
-    text-align: center;
-    margin: 20px 0;
-    border-radius: 10px;
+
+.hero { /*mengatur background pada slider*/
+    background: linear-gradient(to bottom, #8BCBE6, #ffffff);
+    width: 100%;
 }
-.hero h2 {
-    font-size: 24px;
-    margin-top: 10px;
+
+.carousel-item { /*mengatur posisi banner pada slider*/
+    height: auto;
+    padding: 20px; 
 }
-.features {
-    margin: 20px 0;
+
+.carousel-item img { /*mengatur ukuran banner pada slider*/
+    object-fit: contain; 
+    height: 160px; 
 }
-.features .card {
+
+.features { /*mengatur grid pada pilihan menu*/
+    margin: 30px 120px 0px;
+}
+
+.features .card { /*mengatur background dan layout masing-masing pilihan menu*/
     margin-bottom: 20px;
     border: none;
     text-align: center;
 }
-.features .card img {
+
+.features .card img { /*mengatur icon pilihan menu*/
     max-width: 250px;
-    margin: 0 auto;
-    border-radius: 15px;
+    margin: auto;
+    border-radius: 20px;
 }
-.features .card-body {
+
+.features .card-body { /*mengatur jarak text dengan icon pada pilihan menu*/
     padding: 10px;
 }
-.contact {
+
+.contact { /*mengatur footer*/
     background-color: #8BCBE6;
-    color: #fff;
-    padding: 20px;
+    color: #424242;
+    padding: 20px 0px 5px;
     text-align: center;
-    margin-top: 20px;
 }
-.contact p {
-    margin: 0;
+
+.contact p { /*mengatur layout text pada footer*/
+    margin: 0px;
 }
-.contact a {
-    color: #fff;
+
+.contact a { /*mengatur bagian email*/
+    color: #424242;
 }
-.contact a:hover {
+
+.contact a:hover { /*mengatur bagian email ketika arahkan kursor*/
     text-decoration: underline;
 }
-.social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    font-size: 24px;
+
+.social-icons img { /*mengatur ukuran icon bagian footer*/
+    margin: 20px 5px 5px;
+    width: 26px; /*mengatur lebar icon footer*/
+    height: 26px; /*mengatur tinggi icon footer*/
 }
