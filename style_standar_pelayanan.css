@@ -1,0 +1,153 @@
+body {
+    background-color: #ededed;
+    font-family: Arial, sans-serif;
+    color: #424242;
+    opacity: 0.1;
+    transition: opacity 0.1s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+header { /*mengatur background pada logo*/
+    padding: 20px 9px;
+}
+
+header img { /*mengatur logo*/
+    max-width: 100%;
+}
+
+.navbar-custom { /*background menu bar*/
+    background-color: #f9f9f9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .nav-link { /* warna text menu bar */
+    color: #3b3b3b; 
+}
+
+.navbar-nav .nav-item:hover > .nav-link { /*mengatur hover menu bar*/
+    background-color: #1a2f61; 
+    color: #ffffff; 
+    padding: 5px 10px 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+}
+
+.dropdown-menu .dropdown-item { /*waktu transisi ketika hover bagian sub menu*/
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover { /*mengatur hover sub menu bar*/
+    background-color: #1a2f61; 
+    color: #ffffff; 
+    border-radius: 3px;
+    margin: 0px 3px 0px;
+    transform: translateX(5px);
+}
+
+.navbar-toggler { /* waktu transisi toggle button ketika hover */
+    transition: transform 0.3s ease;
+    border-color: rgba(0, 0, 0, 0.178);
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-toggler:hover {
+    transform: rotate(90deg); /* transisi toggle button ketika hover */
+}
+
+.navbar-toggler-icon { /*mengatur gambar logo toggle button*/
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.container-fluid { 
+    margin-top: 100px;
+}
+
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    letter-spacing: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 523px;
+    object-fit: cover;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.display {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+    background-color: #5190d4;
+    color: #ffffff;
+}
+
+/*Footer*/
+.contact { /*mengatur footer*/
+    background-color: #1a2f61;
+    color: #efefef;
+    padding: 20px 0px 5px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact p { /*mengatur layout text pada footer*/
+    margin: 0px;
+}
+
+.contact a { /*mengatur bagian email*/
+    color: #efefef;
+}
+
+.contact a:hover { /*mengatur bagian email ketika arahkan kursor*/
+    color: #5bb8f2; 
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.contact a[href^="mailto:"] {
+    text-decoration: none;
+}
+
+.social-icons img { /*mengatur ukuran icon bagian footer*/
+    margin: 20px 5px 10px;
+    width: 26px; 
+    height: 26px; 
+}
