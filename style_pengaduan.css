@@ -1,0 +1,188 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #424242;
+    opacity: 0.1;
+    transition: opacity 0.3s ease-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+header { /*mengatur background pada logo*/
+    padding: 20px 25px;
+}
+
+header img { /*mengatur logo*/
+    max-width: 100%;
+}
+
+.navbar-nav {
+    padding-left: 17px;
+    padding-right: 0px;
+}
+
+.navbar-custom {
+    background-color: #f9f9f9;
+    padding-right: 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .nav-link {
+    color: #3b3b3b;
+}
+
+.navbar-nav .nav-item:hover > .nav-link {
+    background-color: #1a2f61;
+    color: #ffffff;
+    padding: 5px 10px 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 3px;
+}
+
+.dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #1a2f61;
+    color: #ffffff;
+    border-radius: 3px;
+    margin: 0px 3px 0px;
+    transform: translateX(5px);
+}
+
+.navbar-toggler {
+    transition: transform 0.3s ease;
+    border-color: rgba(0, 0, 0, 0.178);
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    transform: rotate(90deg);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/*-Foto-*/
+.container-fluid {
+    margin-top: 100px;
+}
+
+.hero-section h1 {
+    letter-spacing: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 523px;
+    object-fit: cover;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/*-Form-*/
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.animated-input {
+    transition: all 0.3fs ease-in-out;
+    border-radius: 5px;
+}
+
+.animated-input:hover {
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.animated-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.animated-button {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #1a2f61;
+    color: #efefef;
+    transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.animated-button:hover {
+    background-color: #4897ec;
+    transform: scale(1.013);
+}
+
+.animated-button:active {
+    transform: scale(0.99);
+}
+
+/*-Footer-*/
+.contact {
+    background-color: #1a2f61;
+    color: #efefef;
+    padding: 20px 0px 5px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact p {
+    margin: 0px;
+}
+
+.contact a {
+    color: #efefef;
+}
+
+.contact a:hover {
+    color: #5bb8f2;
+    transition: color 0.3s ease, color 0.3s ease;
+}
+
+.contact a[href^="mailto:"] {
+    text-decoration: none;
+}
+
+.social-icons img {
+    margin: 20px 5px 10px;
+    width: 26px;
+    height: 26px;
+}
