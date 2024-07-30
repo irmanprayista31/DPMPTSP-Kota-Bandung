@@ -79,7 +79,7 @@ header img {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/*-Foto-*/
+/* Foto */
 .container-fluid {
     margin-top: 100px;
 }
@@ -111,7 +111,7 @@ header img {
     font-size: 2rem;
 }
 
-/*-Video-*/
+/* Video */
 .video-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Mengatur 3 kolom */
@@ -154,7 +154,7 @@ header img {
     padding: 10px 0;
 }
 
-/*-Footer-*/
+/* Footer */
 .contact {
     background-color: #1a2f61;
     color: #efefef;
@@ -180,8 +180,17 @@ header img {
     text-decoration: none;
 }
 
-.social-icons img {
+.social-icons img { /*mengatur ukuran icon bagian footer*/
     margin: 20px 5px 10px;
-    width: 26px;
-    height: 26px;
+    width: 26px; /*mengatur lebar icon footer*/
+    height: 26px; /*mengatur tinggi icon footer*/
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.28);
+}
+
+.social-icons img:active {
+    transform: scale(0.8);
 }

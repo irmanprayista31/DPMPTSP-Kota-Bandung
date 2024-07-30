@@ -10,6 +10,7 @@ body.fade-in {
     opacity: 1;
 }
 
+/* Navbar */
 header { /*mengatur background pada logo*/
     padding: 20px 25px;
 }
@@ -137,6 +138,20 @@ header img { /*mengatur logo*/
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
 
+textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-y: auto;
+    outline: none;
+    border-radius: 10px;
+}
+
 .animated-button {
     margin-top: 10px;
     width: 100%;
@@ -147,6 +162,7 @@ header img { /*mengatur logo*/
 }
 
 .animated-button:hover {
+    color: #efefef;
     background-color: #4897ec;
     transform: scale(1.013);
 }
@@ -181,8 +197,17 @@ header img { /*mengatur logo*/
     text-decoration: none;
 }
 
-.social-icons img {
+.social-icons img { /*mengatur ukuran icon bagian footer*/
     margin: 20px 5px 10px;
-    width: 26px;
-    height: 26px;
+    width: 26px; /*mengatur lebar icon footer*/
+    height: 26px; /*mengatur tinggi icon footer*/
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.28);
+}
+
+.social-icons img:active {
+    transform: scale(0.8);
 }

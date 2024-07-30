@@ -10,6 +10,7 @@ body.fade-in {
     opacity: 1;
 }
 
+/* Navbar */
 header { /*mengatur background pada logo*/
     padding: 20px 9px;
 }
@@ -76,6 +77,7 @@ header img { /*mengatur logo*/
     margin-top: 100px;
 }
 
+/* Standar Pelayanan */
 .hero-section {
     position: relative;
     text-align: center;
@@ -148,6 +150,15 @@ header img { /*mengatur logo*/
 
 .social-icons img { /*mengatur ukuran icon bagian footer*/
     margin: 20px 5px 10px;
-    width: 26px; 
-    height: 26px; 
+    width: 26px; /*mengatur lebar icon footer*/
+    height: 26px; /*mengatur tinggi icon footer*/
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.28);
+}
+
+.social-icons img:active {
+    transform: scale(0.8);
 }
