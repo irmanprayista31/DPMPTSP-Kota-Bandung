@@ -79,6 +79,13 @@
                         <label for="message" class="form-label">Pesan</label>
                         <textarea class="form-control animated-input" maxlength="1000" id="message" rows="4" placeholder="Masukkan pesan"></textarea>
                     </div>
+                    <div class="captcha-container">
+                        <div class="loading-spinner" id="loading-spinner"></div>
+                        <input type="checkbox" class="captcha-checkbox" id="captcha">
+                        <label for="captcha" class="captcha-label">I'm not a robot</label>
+                        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA logo" class="captcha-logo">
+                    </div>
+
                     <button type="submit" class="btn animated-button">Kirim</button>
                 </form>
             </div>
@@ -107,6 +114,19 @@
             document.addEventListener("DOMContentLoaded", function() {
                 document.body.classList.add('fade-in');
             });
+            document.getElementById('captcha').addEventListener('change', function() {
+                var checkbox = this;
+                var spinner = document.getElementById('loading-spinner');
+                
+                if (checkbox.checked) {
+                    spinner.style.display = 'block';
+                    checkbox.style.display = 'none';
+                    setTimeout(function() {
+                        spinner.style.display = 'none';
+                        checkbox.style.display = 'inline-block';
+                    }, 2000);
+                }
+            });
         </script>
     </body>
 </html>
