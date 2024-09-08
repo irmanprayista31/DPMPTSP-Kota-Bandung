@@ -1,4 +1,4 @@
-body { /*mengatur warna dan jenis font*/
+body { 
     font-family: Arial, sans-serif;
     background-color: #ebf1ff;
     color: #424242;
@@ -11,15 +11,15 @@ body.fade-in {
 }
 
 /* Navbar */
-header { /*mengatur background pada logo*/
-    padding: 20px 9px;
+header { 
+    padding: 10px 5px;
 }
 
-header img { /*mengatur logo*/
+header img { 
     max-width: 100%;
 }
 
-.navbar-custom { /*background menu bar*/
+.navbar-custom { 
     background-color: #f9f9f9;
     position: fixed;
     width: 100%;
@@ -29,56 +29,94 @@ header img { /*mengatur logo*/
 }
 
 .navbar-custom .nav-link {
-    color: #3b3b3b; /* warna text menu bar */
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #3b3b3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px; 
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.1s ease;
 }
 
-.navbar-nav .nav-item:hover > .nav-link { /*mengatur hover menu bar*/
+.navbar-nav .nav-link:hover {
+    transform: scale(1.01);
     background-color: #1a2f61; 
     color: #ffffff; 
-    padding: 5px 10px 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 3px;
 }
 
-.dropdown-menu .dropdown-item { /*waktu transisi ketika hover bagian sub menu*/
+.navbar-custom .nav-link:active {
+    transform: scale(0.98);
+}
+
+/* Jika ada tambahan sub menu pada menu bar */
+/* .dropdown-menu .dropdown-item { 
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-.dropdown-menu .dropdown-item:hover { /*mengatur hover sub menu bar*/
+.dropdown-menu .dropdown-item:hover { 
     background-color: #1a2f61; 
     color: #ffffff; 
     border-radius: 3px;
     margin: 0px 3px 0px;
     transform: translateX(5px);
-}
+} */
 
 .navbar-toggler {
-    transition: transform 0.3s ease; /* waktu transisi toggle button ketika hover */
-    border-color: rgba(0, 0, 0, 0.178); /* warna border toggle button */
-    outline: none; /* menghilangkan outline ketika diklik */
-    box-shadow: none; /* menghilangkan box shadow ketika diklik */
+    transition: transform 0.3s ease; 
+    border-color: rgba(0, 0, 0, 0.178); 
+    outline: none; 
+    box-shadow: none;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    outline: none; /* menghilangkan outline ketika diklik */
-    box-shadow: none; /* menghilangkan box shadow ketika diklik */
+    outline: none; 
+    box-shadow: none;
 }
 
 .navbar-toggler:hover {
-    transform: rotate(90deg); /* transisi toggle button ketika hover */
+    transform: rotate(90deg); 
 }
 
-.navbar-toggler-icon { /*mengatur gambar logo toggle button*/
+.navbar-toggler-icon { 
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/*-Foto-*/
 .container-fluid {
-    margin-top: 100px; /* mengatur tinggi navbar */
+    margin-top: 85px;
+}
+
+.hero-section h1 {
+    padding-bottom: 150px;
+    letter-spacing: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.hero-section img {
+    width: 100%;
+    height: max-content;
+    object-fit: cover;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
 /* Slider */
-.hero { /*mengatur background pada slider*/
+.hero {
     background: #ffffff;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -92,22 +130,22 @@ header img { /*mengatur logo*/
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
-.carousel-item { /*mengatur posisi banner pada slider*/
+.carousel-item { 
     height: auto;
     padding: 20px; 
 }
 
-.carousel-item img { /*mengatur ukuran banner pada slider*/
+.carousel-item img { 
     object-fit: contain; 
     height: 160px; 
 }
 
 /* Pilihan Menu */
-.features { /*mengatur grid pada pilihan menu*/
+.features { 
     margin: 30px 20px 0px;
 }
 
-.features .card { /*mengatur background dan layout masing-masing pilihan menu*/
+.features .card { 
     background-color: #ffffff;
     margin-bottom: 30px;
     border-radius: 20px;
@@ -116,11 +154,11 @@ header img { /*mengatur logo*/
     transition: transform 0.3s ease;
 }
 
-.features .card:hover { /*efek zoom-in saat hover pilihan menu*/
+.features .card:hover {
     transform: scale(1.08); 
 }
 
-.features .card img { /*mengatur icon pilihan menu*/
+.features .card img { 
     width: 80%; 
     height: auto; 
     object-fit: contain;
@@ -129,42 +167,42 @@ header img { /*mengatur logo*/
     border-radius: 20px;
 }
 
-.features .card-body { /*mengatur jarak text dengan icon pada pilihan menu*/
+.features .card-body { 
     padding: 10px;
 }
 
 .card-link {
     display: block;
     color: #424242;
-    text-decoration: none; /* Menghilangkan garis bawah */
+    text-decoration: none;
 }
 
 .card-link:hover {
     color: #424242;
-    text-decoration: none; /* Menghilangkan garis bawah */
+    text-decoration: none; 
 }
 
-.card-link .card { /* Mengisi seluruh tinggi ketika diklik */
+.card-link .card {
     height: 100%;
 }
 
 /* Footer */
-.contact { /*mengatur footer*/
+.contact { 
     background-color: #1a2f61;
     color: #efefef;
     padding: 20px 0px 5px;
     text-align: center;
 }
 
-.contact p { /*mengatur layout text pada footer*/
+.contact p { 
     margin: 0px;
 }
 
-.contact a { /*mengatur bagian email*/
+.contact a {
     color: #efefef;
 }
 
-.contact a:hover { /*mengatur bagian email ketika arahkan kursor*/
+.contact a:hover { 
     color: #5bb8f2; 
     transition: color 0.3s ease, color 0.3s ease;
 }
@@ -173,10 +211,10 @@ header img { /*mengatur logo*/
     text-decoration: none;
 }
 
-.social-icons img { /*mengatur ukuran icon bagian footer*/
+.social-icons img { 
     margin: 20px 5px 10px;
-    width: 26px; /*mengatur lebar icon footer*/
-    height: 26px; /*mengatur tinggi icon footer*/
+    width: 26px; 
+    height: 26px; 
     transition: transform 0.2s ease;
 }
 

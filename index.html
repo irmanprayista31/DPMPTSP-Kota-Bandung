@@ -6,6 +6,7 @@
         <title>DPMPTSP Kota Bandung</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style_index.css">
+        <link rel="icon" type="image/x-icon" href="component/dpmptsp.ico">
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 document.body.classList.add('fade-in');
@@ -33,7 +34,7 @@
                         <a class="nav-link" href="profile.html">Profil</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="pelayananDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="pelayananDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Layanan
                         </a>
                         <div class="dropdown-menu" aria-labelledby="pelayananDropdown">
@@ -47,10 +48,17 @@
             </div>
         </nav>
 
+        <!-- Foto -->
         <div class="container-fluid p-0">
-            <!-- Foto dan Slider -->
+            <div class="hero-section position-relative text-center mb-4">
+                <img src="component/bg_dpmptsp.png" class="img-fluid" alt="Hero Image">
+                <div class="overlay d-flex justify-content-center align-items-center">
+                    <h1>DPMPTSP Kota Bandung</h1>
+                </div>
+            </div>
+
+            <!-- Slider -->
             <div id="heroCarousel" class="carousel slide hero" data-ride="carousel">
-                <img src="component/bg_dpmptsp.png" class="img-fluid">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="component/hayu_btn.png" class="d-block w-100" alt="Hayu Perizinan Online">

@@ -11,16 +11,17 @@ body.fade-in {
 }
 
 /* Navbar */
-header { /*mengatur background pada logo*/
-    padding: 20px 9px;
+header { 
+    padding: 10px 5px;
 }
 
-header img { /*mengatur logo*/
+header img { 
     max-width: 100%;
 }
 
-.navbar-custom { /*background menu bar*/
+.navbar-custom { 
     background-color: #f9f9f9;
+    padding-right: 16px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -28,31 +29,27 @@ header img { /*mengatur logo*/
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-custom .nav-link { /* warna text menu bar */
-    color: #3b3b3b; 
+.navbar-custom .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #3b3b3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px; 
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.1s ease;
 }
 
-.navbar-nav .nav-item:hover > .nav-link { /*mengatur hover menu bar*/
+.navbar-nav .nav-link:hover { 
+    transform: scale(1.01);
     background-color: #1a2f61; 
     color: #ffffff; 
-    padding: 5px 10px 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 3px;
 }
 
-.dropdown-menu .dropdown-item { /*waktu transisi ketika hover bagian sub menu*/
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+.navbar-custom .nav-link:active {
+    transform: scale(0.98);
 }
 
-.dropdown-menu .dropdown-item:hover { /*mengatur hover sub menu bar*/
-    background-color: #1a2f61; 
-    color: #ffffff; 
-    border-radius: 3px;
-    margin: 0px 3px 0px;
-    transform: translateX(5px);
-}
-
-.navbar-toggler { /* waktu transisi toggle button ketika hover */
+.navbar-toggler { 
     transition: transform 0.3s ease;
     border-color: rgba(0, 0, 0, 0.178);
     outline: none; 
@@ -66,18 +63,14 @@ header img { /*mengatur logo*/
 }
 
 .navbar-toggler:hover {
-    transform: rotate(90deg); /* transisi toggle button ketika hover */
+    transform: rotate(90deg); 
 }
 
-.navbar-toggler-icon { /*mengatur gambar logo toggle button*/
+.navbar-toggler-icon { 
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.container-fluid { 
-    margin-top: 100px;
-}
-
-/* Standar Pelayanan */
+/* Foto */
 .hero-section {
     position: relative;
     text-align: center;
@@ -93,7 +86,7 @@ header img { /*mengatur logo*/
 
 .hero-section img {
     width: 100%;
-    height: 523px;
+    height: 540px;
     object-fit: cover;
 }
 
@@ -111,19 +104,102 @@ header img { /*mengatur logo*/
     font-size: 2rem;
 }
 
+.container-fluid { 
+    margin-top: 85px;
+}
+
+/* Standar Pelayanan */
 .display {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.display thead {
+    background-color: #1a2f61;
+    color: #ffffff;
+}
+
+.display thead th {
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+}
+
+.display tbody tr:hover {
+    background-color: #ffffff;
+}
+
+.display tbody td {
+    padding: 12px 15px;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.display tbody td:last-child {
+    text-align: center;
 }
 
 .btn-custom {
-    background-color: #5190d4;
+    background-color: #ededed;
+    color: #000000;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #1a2f61;
+    color: #ffffff;
+    transform: scale(1.08);
+}
+
+.btn-custom:active {
+    transform: scale(0.92);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-item .page-link {
+    color: #222222;
+    font-size: 14px;
+    padding: 8px 13px;
+    margin: 5px 5px;
+    transition: border-color 0.3s ease-in-out, transform 0.2s ease-in-out, background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+    border: none;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #ffffff; 
+    color: #000000;
+}
+
+.pagination .page-item .page-link:focus,
+.pagination .page-item .page-link:active {
+    outline: none;
+    box-shadow: none;
+    color: #000000;
+}
+
+.pagination .page-item .page-link:hover {
+    transform: scale(1.08);
+    background-color: #1a2f61;
     color: #ffffff;
 }
 
 /*Footer*/
-.contact { /*mengatur footer*/
+.contact { 
     background-color: #1a2f61;
     color: #efefef;
     padding: 20px 0px 5px;
@@ -131,15 +207,15 @@ header img { /*mengatur logo*/
     text-align: center;
 }
 
-.contact p { /*mengatur layout text pada footer*/
+.contact p {
     margin: 0px;
 }
 
-.contact a { /*mengatur bagian email*/
+.contact a { 
     color: #efefef;
 }
 
-.contact a:hover { /*mengatur bagian email ketika arahkan kursor*/
+.contact a:hover { 
     color: #5bb8f2; 
     transition: color 0.3s ease, color 0.3s ease;
 }
@@ -148,10 +224,10 @@ header img { /*mengatur logo*/
     text-decoration: none;
 }
 
-.social-icons img { /*mengatur ukuran icon bagian footer*/
+.social-icons img { 
     margin: 20px 5px 10px;
-    width: 26px; /*mengatur lebar icon footer*/
-    height: 26px; /*mengatur tinggi icon footer*/
+    width: 26px; 
+    height: 26px; 
     transition: transform 0.2s ease;
 }
 

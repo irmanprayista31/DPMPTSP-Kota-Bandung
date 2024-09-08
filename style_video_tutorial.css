@@ -10,21 +10,16 @@ body.fade-in {
     opacity: 1;
 }
 
-/*-Navbar-*/
-header {
-    padding: 20px 25px;
+/* Navbar */
+header { 
+    padding: 10px 5px;
 }
 
-header img {
+header img { 
     max-width: 100%;
 }
 
-.navbar-nav {
-    padding-left: 17px;
-    padding-right: 0px;
-}
-
-.navbar-custom {
+.navbar-custom { 
     background-color: #f9f9f9;
     padding-right: 16px;
     position: fixed;
@@ -35,53 +30,51 @@ header img {
 }
 
 .navbar-custom .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
     color: #3b3b3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px; 
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.1s ease;
 }
 
-.navbar-nav .nav-item:hover > .nav-link {
-    background-color: #1a2f61;
-    color: #ffffff;
-    padding: 5px 10px 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 3px;
+.navbar-nav .nav-link:hover { 
+    transform: scale(1.01);
+    background-color: #1a2f61; 
+    color: #ffffff; 
 }
 
-.dropdown-menu .dropdown-item {
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.dropdown-menu .dropdown-item:hover {
-    background-color: #1a2f61;
-    color: #ffffff;
-    border-radius: 3px;
-    margin: 0px 3px 0px;
-    transform: translateX(5px);
+.navbar-custom .nav-link:active {
+    transform: scale(0.98);
 }
 
 .navbar-toggler {
-    transition: transform 0.3s ease;
-    border-color: rgba(0, 0, 0, 0.178);
-    outline: none;
-    box-shadow: none;
+    transition: transform 0.3s ease; 
+    border-color: rgba(0, 0, 0, 0.178); 
+    outline: none; 
+    box-shadow: none; 
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    outline: none;
-    box-shadow: none;
+    outline: none; 
+    box-shadow: none; 
 }
 
 .navbar-toggler:hover {
-    transform: rotate(90deg);
+    transform: rotate(90deg); 
 }
 
-.navbar-toggler-icon {
+.navbar-toggler-icon { 
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Foto */
-.container-fluid {
-    margin-top: 100px;
+.hero-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .hero-section h1 {
@@ -93,7 +86,7 @@ header img {
 
 .hero-section img {
     width: 100%;
-    height: 523px;
+    height: 540px;
     object-fit: cover;
 }
 
@@ -111,10 +104,14 @@ header img {
     font-size: 2rem;
 }
 
+.container-fluid { 
+    margin-top: 85px;
+}
+
 /* Video */
 .video-menu {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Mengatur 3 kolom */
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 10px 30px;
 }
@@ -129,12 +126,12 @@ header img {
 }
 
 .video-item:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .video-thumbnail {
     position: relative;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%; 
     overflow: hidden;
 }
 
@@ -151,7 +148,7 @@ header img {
     text-align: center;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px 0;
+    padding: 8px 10px 0px 10px;
 }
 
 /* Footer */
@@ -180,10 +177,10 @@ header img {
     text-decoration: none;
 }
 
-.social-icons img { /*mengatur ukuran icon bagian footer*/
+.social-icons img { 
     margin: 20px 5px 10px;
-    width: 26px; /*mengatur lebar icon footer*/
-    height: 26px; /*mengatur tinggi icon footer*/
+    width: 26px; 
+    height: 26px; 
     transition: transform 0.2s ease;
 }
 

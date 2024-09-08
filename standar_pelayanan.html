@@ -7,6 +7,7 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="style_standar_pelayanan.css">
+        <link rel="icon" type="image/x-icon" href="component/dpmptsp.ico">
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 document.body.classList.add('fade-in');
@@ -33,14 +34,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="profile.html">Profil</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="pelayananDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Layanan
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="pelayananDropdown">
-                            <a class="dropdown-item" href="regulasi.html">Regulasi</a>
-                        </div>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="standar_pelayanan.html">Standar Pelayanan</a>
                     </li>
@@ -50,17 +43,15 @@
 
         <!-- Foto -->
         <div class="container-fluid p-0">
-            <div id="heroCarousel" class="carousel slide hero" data-ride="carousel"></div>
-                <div class="hero-section position-relative text-center mb-4">
-                    <img src="component/bg_std_pelayanan.png" class="img-fluid" alt="Hero Image">
-                    <div class="overlay d-flex justify-content-center align-items-center">
-                        <h1>Standar Pelayanan</h1>
-                    </div>
+            <div class="hero-section position-relative text-center mb-4">
+                <img src="component/bg_std_pelayanan.png" class="img-fluid" alt="Hero Image">
+                <div class="overlay d-flex justify-content-center align-items-center">
+                    <h1>Standar Pelayanan</h1>
                 </div>
             </div>
         </div> 
 
-        <!-- Standar Pelayanan -->
+        <!-- Standar Pelayanan -->       
         <div class="container mt-5">
             <div class="table-responsive">
                 <table class="display table table-hover">
@@ -758,7 +749,6 @@
                 <div class="modal-dialog modal-xl" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="pdfModalLabel">Standar Pelayanan</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -790,7 +780,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
-
         <script>
             function openPopUp(url) {
                 // Set URL PDF ke elemen embed di dalam modal
@@ -799,13 +788,11 @@
                 $('#pdfModal').modal('show');
             }
         </script>
-
         <script>
             $(document).ready(function() {
                 $('#standarPelayananTable').DataTable();
             });
         </script>
-
         <script>
             $(document).ready(function() {
                 $('.table').DataTable({
@@ -815,7 +802,7 @@
                     ordering: true,
                     info: true,
                     autoWidth: true,
-                    pageLength: 10 // Menampilkan 10 entri per halaman
+                    pageLength: 10
                 });
             });
         </script>
